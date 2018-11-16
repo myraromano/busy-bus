@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is the upcoming bus arrivals screen of the BusyBus app">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/jom3yzl.css">
+  <title>BusyBus App</title>
+</head>
+<body>
+  <section id="app">
+    <header id="app-header">
+      <div id="time">
+        <img src="images/time.svg" alt=time>
+      </div>
+      <div id="status-bar">
+        <div id="status-bar-left" alt="status bar">
+          <img src="images/mobile-signal.svg" alt="mobile signal">
+          <img src="images/carrier.svg" alt="mobile carrier">
+          <img src="images/wifi.svg" alt="wifi signal">
+        </div>
+        <div id="status-bar-right">
+          <img src="images/battery.svg" alt="battery">
+        </div>
+      </div>
+      <nav id="nav-bar">
+        <div id="nav-bar-content">
+          <img src="images/back.svg" alt="back arrow">
+          <h1>Washington & State</h1>
+          <img id="hidden-arrow" src="images/arrow-blue.svg" alt="hidden arrow">
+        </div>
+      </nav>
+      <div id="map">
+      </div>
+    </header>
+    <div id="stop-info">
+    <div id="stop-info-left">
+      <h2>Washington & State</h2>
+      <ul>
+        <li id="bus-line-small" class="active">56</li>
+        <li id="bus-line-small" class="active">60</li>
+        <li id="bus-line-small" class="active">124</li>
+        <li id="bus-line-small" class="active">151</li>
+        <li id="bus-line-small" class="active">J14</li>
+        <li id="bus-line-small" class="inactive">4</li>
+        <li id="bus-line-small" class="inactive">20</li>
+        <li id="bus-line-small" class="inactive">157</li>
+      </ul>
+      </div>
+      <div id="fav">
+        <img src="images/fav.svg" alt=favorite>
+      </div>
+    </div>
+    <div id="bus-arrivals">
+      <div id="bus-line-info">
+        <p id="bus-line-number">60</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">Randolph/Harbor Dr</p>
+            <p id="bus-line-direction">Eastbound · Every 20 min</p>
+          </div>
+        <p id="bus-line-eta">2m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number">124</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">Navy Pier</p>
+            <p id="bus-line-direction">Eastbound · Every 10 min</p>
+          </div>
+        <p id="bus-line-eta">5m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number">151</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">Devon/Clark</p>
+            <p id="bus-line-direction">Northbound · Every 16 min</p>
+          </div>
+        <p id="bus-line-eta">6m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number">56</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">Washington/Michigan</p>
+            <p id="bus-line-direction">Northbound · Every 10 min</p>
+          </div>
+        <p id="bus-line-eta">9m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number">J14</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">103rd/Stony Island</p>
+            <p id="bus-line-direction">Southbound · Every 15 min</p>
+          </div>
+        <p id="bus-line-eta">10m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number" class="reroute">6X</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name">Jackson Park Express</p>
+            <p id="bus-line-direction">Reroute</p>
+          </div>
+        <p id="bus-line-eta">17m</p>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number" class="inactive">4</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name" class="inactive">Cottage Grove</p>
+            <p id="bus-line-direction">Eastbound</p>
+          </div>
+          <div id="bus-line-resume-time">
+            <p id="resume-label">Resumes</p>
+            <p id="resume-time">12:10am</p>
+          </div>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number" class="inactive">20</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name" class="inactive">Madison</p>
+            <p id="bus-line-direction">Eastbound</p>
+          </div>
+          <div id="bus-line-resume-time">
+            <p id="resume-label">Resumes</p>
+            <p id="resume-time">12:10am</p>
+          </div>
+      </div>
+      <div id="bus-line-info">
+        <p id="bus-line-number" class="inactive">157</p>
+          <div id="bus-line-name-direction">
+            <p id="bus-line-name" class="inactive">Streeterville/Taylor</p>
+            <p id="bus-line-direction">Eastbound</p>
+          </div>
+          <div id="bus-line-resume-time">
+            <p id="resume-label">Resumes</p>
+            <p id="resume-time">6:00am</p>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
