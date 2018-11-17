@@ -37,9 +37,6 @@ h2 {
 #app-header {
   width: inherit;
   position: fixed;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  order: 0;
   background-color: rgba(19, 25, 64);
   z-index: 99;
 }
@@ -136,7 +133,9 @@ ul li {
 }
 
 #bus-arrivals {
-  overflow: scroll;
+  position: relative;
+  top: 326px;
+  overflow: inherit;
 }
 
 ::-webkit-scrollbar {
@@ -146,7 +145,7 @@ ul li {
 
 #bus-line-info {
   background-color: rgba(255, 255, 255);
-  height: 80px;
+  height: 75px;
   padding: 20px;
   border-bottom: 1px solid rgba(19, 25, 64, .1);
 }
