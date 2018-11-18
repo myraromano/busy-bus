@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +12,17 @@
 <body>
   <section id="app">
     <header id="app-header">
-      <div id="time">
-        <img src="images/time.svg" alt=time>
-      </div>
       <div id="status-bar">
-        <div id="status-bar-left" alt="status bar">
-          <img src="images/mobile-signal.svg" alt="mobile signal">
-          <img src="images/carrier.svg" alt="mobile carrier">
-          <img src="images/wifi.svg" alt="wifi signal">
-        </div>
-        <div id="status-bar-right">
-          <img src="images/battery.svg" alt="battery">
-        </div>
+          <img class="signal" src="images/mobile-signal.svg" alt="mobile signal">
+          <img class="signal" src="images/carrier.svg" alt="mobile carrier">
+          <img class="signal" src="images/wifi.svg" alt="wifi signal">
+          <img id="clock" src="images/time.svg" alt=time>
+          <img id="battery" src="images/battery.svg" alt="battery">
       </div>
       <nav id="nav-bar">
         <div id="nav-bar-content">
           <img src="images/back.svg" alt="back arrow">
-          <h1>Washington & State</h1>
+          <h2>Washington & State</h2>
           <img id="hidden-arrow" src="images/arrow-blue.svg" alt="hidden arrow">
         </div>
       </nav>
@@ -36,16 +30,16 @@
       </div>
       <div id="stop-info">
       <div id="stop-info-left">
-        <h2>Washington & State</h2>
+        <h3>Washington & State</h3>
         <ul>
-          <li id="bus-line-small" class="active">56</li>
-          <li id="bus-line-small" class="active">60</li>
-          <li id="bus-line-small" class="active">124</li>
-          <li id="bus-line-small" class="active">151</li>
-          <li id="bus-line-small" class="active">J14</li>
-          <li id="bus-line-small" class="inactive">4</li>
-          <li id="bus-line-small" class="inactive">20</li>
-          <li id="bus-line-small" class="inactive">157</li>
+          <li class="bus-line-small-active">56</li>
+          <li class="bus-line-small-active">60</li>
+          <li class="bus-line-small-active">124</li>
+          <li class="bus-line-small-active">151</li>
+          <li class="bus-line-small-active">J14</li>
+          <li class="bus-line-small-inactive">4</li>
+          <li class="bus-line-small-inactive">20</li>
+          <li class="bus-line-small-inactive">157</li>
         </ul>
         </div>
         <div id="fav">
@@ -54,85 +48,85 @@
       </div>
     </header>
     <div id="bus-arrivals">
-      <div id="bus-line-info">
-        <p id="bus-line-number">60</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">Randolph/Harbor Dr</p>
-            <p id="bus-line-direction">Eastbound · Every 20 min</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number">60</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">Randolph/Harbor Dr</p>
+            <p class="bus-line-direction">Eastbound · Every 20 min</p>
           </div>
-        <p id="bus-line-eta">2m</p>
+        <p class="bus-line-eta">2m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number">124</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">Navy Pier</p>
-            <p id="bus-line-direction">Eastbound · Every 10 min</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number">124</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">Navy Pier</p>
+            <p class="bus-line-direction">Eastbound · Every 10 min</p>
           </div>
-        <p id="bus-line-eta">5m</p>
+        <p class="bus-line-eta">5m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number">151</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">Devon/Clark</p>
-            <p id="bus-line-direction">Northbound · Every 16 min</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number">151</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">Devon/Clark</p>
+            <p class="bus-line-direction">Northbound · Every 16 min</p>
           </div>
-        <p id="bus-line-eta">6m</p>
+        <p class="bus-line-eta">6m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number">56</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">Washington/Michigan</p>
-            <p id="bus-line-direction">Northbound · Every 10 min</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number">56</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">Washington/Michigan</p>
+            <p class="bus-line-direction">Northbound · Every 10 min</p>
           </div>
-        <p id="bus-line-eta">9m</p>
+        <p class="bus-line-eta">9m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number">J14</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">103rd/Stony Island</p>
-            <p id="bus-line-direction">Southbound · Every 15 min</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number">J14</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">103rd/Stony Island</p>
+            <p class="bus-line-direction">Southbound · Every 15 min</p>
           </div>
-        <p id="bus-line-eta">10m</p>
+        <p class="bus-line-eta">10m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number" class="reroute">6X</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name">Jackson Park Express</p>
-            <p id="bus-line-direction">Reroute</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number-reroute">6X</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name">Jackson Park Express</p>
+            <p class="bus-line-direction">Reroute</p>
           </div>
-        <p id="bus-line-eta">17m</p>
+        <p class="bus-line-eta">17m</p>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number" class="inactive">4</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name" class="inactive">Cottage Grove</p>
-            <p id="bus-line-direction">Eastbound</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number-inactive">4</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name-inactive">Cottage Grove</p>
+            <p class="bus-line-direction">Eastbound</p>
           </div>
-          <div id="bus-line-resume-time">
-            <p id="resume-label">Resumes</p>
-            <p id="resume-time">12:10am</p>
-          </div>
-      </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number" class="inactive">20</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name" class="inactive">Madison</p>
-            <p id="bus-line-direction">Eastbound</p>
-          </div>
-          <div id="bus-line-resume-time">
-            <p id="resume-label">Resumes</p>
-            <p id="resume-time">12:10am</p>
+          <div class="bus-line-resume-time">
+            <p class="resume-label">Resumes</p>
+            <p class="resume-time">12:10am</p>
           </div>
       </div>
-      <div id="bus-line-info">
-        <p id="bus-line-number" class="inactive">157</p>
-          <div id="bus-line-name-direction">
-            <p id="bus-line-name" class="inactive">Streeterville/Taylor</p>
-            <p id="bus-line-direction">Eastbound</p>
+      <div class="bus-line-info">
+        <p class="bus-line-number-inactive">20</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name-inactive">Madison</p>
+            <p class="bus-line-direction">Eastbound</p>
           </div>
-          <div id="bus-line-resume-time">
-            <p id="resume-label">Resumes</p>
-            <p id="resume-time">6:00am</p>
+          <div class="bus-line-resume-time">
+            <p class="resume-label">Resumes</p>
+            <p class="resume-time">12:10am</p>
+          </div>
+      </div>
+      <div class="bus-line-info">
+        <p class="bus-line-number-inactive">157</p>
+          <div class="bus-line-name-direction">
+            <p class="bus-line-name-inactive">Streeterville/Taylor</p>
+            <p class="bus-line-direction">Eastbound</p>
+          </div>
+          <div class="bus-line-resume-time">
+            <p class="resume-label">Resumes</p>
+            <p class="resume-time">6:00am</p>
           </div>
       </div>
     </div>
