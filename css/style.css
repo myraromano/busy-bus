@@ -30,7 +30,6 @@ h3 {
   min-height: 667px;
   min-width: 375px;
   background-color: rgba(229, 238, 249, 1);
-  overflow-y: scroll;
   box-shadow:0 0px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -138,7 +137,8 @@ ul li {
 
 #bus-arrivals {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
+  height: 358px;
 }
 
 ::-webkit-scrollbar {
@@ -176,10 +176,9 @@ ul li {
   margin-right: 10px;
   border-radius: 5px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(1, 131, 253, 1);
+  background-color: rgba(242, 153, 74, 1);
   display: inline-block;
   vertical-align: middle;
-  background-color: rgba(86, 204, 242, 1);
 }
 
 .bus-line-number-inactive {
@@ -191,7 +190,6 @@ ul li {
   margin-right: 10px;
   border-radius: 5px;
   color: rgba(255, 255, 255, 1);
-  background-color: rgba(1, 131, 253, 1);
   display: inline-block;
   vertical-align: middle;
   background-color: rgba(19, 25, 64, 0.3);
